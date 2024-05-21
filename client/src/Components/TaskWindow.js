@@ -207,8 +207,6 @@ function TaskWindow() {
                 ) : (
                     <div className='task-window-message-wrapper'>
                         You need to be a reistered user to use the task management web app
-                        <Link to='/login'><button className='option-btn'>Login</button></Link>
-                        <Link to='/signup'><button className='option-btn'>Signup</button></Link>
                     </div>
                 )
             }
