@@ -1,6 +1,7 @@
 Steps to run the project after cloning
 
 Assuming you're in the folder Task-Management
+
 Step 1 :- run the command 
 npm install
 
