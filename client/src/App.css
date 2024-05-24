@@ -139,13 +139,33 @@ a:hover {
   gap: 10px;
 }
 
+.completed-task-display {
+  background-color: #b5b5b5;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .task-window-heading {
   font-weight: bold;
   font-size: 18px;
 }
 
+.completed-task-display-heading {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
 .task-window-description {
   color: #666;
+}
+
+.completed-task-display-description {
+  font-style: italic;
 }
 
 .task-window-display-task-tools {

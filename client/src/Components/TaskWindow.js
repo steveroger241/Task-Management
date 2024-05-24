@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import NewTaskWindow from './NewTaskWindow.js';
 import axios from 'axios';
 import { useAuth } from '../Context/AuthContext.js';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import EditTaskWindow from './EditTaskWindow.js';
 
 function TaskWindow() {
@@ -158,11 +158,12 @@ function TaskWindow() {
                                         .filter(dt => allow || !dt.completed)
                                         .map((dt, i) => {
                                             return (
-                                                <div key={i} className='task-window-display-task-box'>
-                                                    <div className='task-window-heading'>
+                                                // <div key={i} className='task-window-display-task-box'>
+                                                <div key={i} className={dt.completed ? 'completed-task-display' : 'task-window-display-task-box'}>
+                                                    <div className={dt.completed ? 'completed-task-display-heading' : 'task-window-heading'}>
                                                         {i + 1}- {dt.heading}
                                                     </div>
-                                                    <div className='task-window-description'>
+                                                    <div className={dt.completed ? 'completed-task-display-description' : 'task-window-description'}>
                                                         {dt.description}
                                                     </div>
                                                     <div className='task-window-display-task-tools'>
